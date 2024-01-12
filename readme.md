@@ -3,14 +3,20 @@ Validador de Cédula y RUC de Ecuador
 <p align="center"><img src="http://res.cloudinary.com/edwin/image/upload/v1496095463/cedulaLogo_lmct8r.png"/></p>
 
 <p align="center">
-<a href="https://app.codeship.com/projects/222775"><img src="https://app.codeship.com/projects/67213cf0-26f5-0135-0866-026545364f16/status?branch=master"></a>
-<a href="https://packagist.org/packages/tavo1987/ec-validador-cedula-ruc"><img src="https://img.shields.io/badge/Packagist-v1.0.0-orange.svg?style=flat-square"></a>
+<a href="https://packagist.org/packages/alban/validador-cedula-ruc-ec"><img src="https://img.shields.io/badge/Packagist-v1.0.0-orange.svg?style=flat-square"></a>
 <a href="https://styleci.io/repos/92779185"><img src="https://styleci.io/repos/92779185/shield"></a>
-<a href="https://packagist.org/packages/tavo1987/ec-validador-cedula-ruc"><img src="https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square"></a>
-<a href="https://packagist.org/packages/tavo1987/ec-validador-cedula-ruc"><img src="https://poser.pugx.org/tavo1987/ec-validador-cedula-ruc/downloads" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/tavo1987/ec-validador-cedula-ruc"><img src="https://poser.pugx.org/tavo1987/ec-validador-cedula-ruc/v/stable" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/alban/validador-cedula-ruc-ec"><img src="https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square"></a>
+<a href="https://packagist.org/packages/alban/validador-cedula-ruc-ec"><img src="https://poser.pugx.org/alban/validador-cedula-ruc-ec/downloads" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/alban/validador-cedula-ruc-ec"><img src="https://poser.pugx.org/alban/validador-cedula-ruc-ec/v/stable" alt="Total Downloads"></a>
 </p>
 
+-------------
+**Descargo de responsabilidad**
+Este proyecto no es de mi autoría, es un fork del proyecto [tavo1987/ec-laravel-validator](https://github.com/tavo1987/ec-laravel-validator), el cual busca continuar manteniendo el packete y corregir errores.
+
+**Notas**
+-  Se corrige el error conocido del tercér dígito menor a 6 para las cédulas
+-------------
 Este pequeño paquete ha sido desarrollado para validar fácilmente:
 
 - Cédula
@@ -29,7 +35,7 @@ Si quieres saber más sobre la lógica utilizada a este paquete puedes visitar e
 Instalación
 ----
 ```bash
-composer require tavo1987/ec-validador-cedula-ruc
+composer require alban/validador-cedula-ruc-ec
 ```
 
 Uso
@@ -50,7 +56,7 @@ Ejemplo:
 require 'vendor/autoload.php';
 
 // Crear nuevo objeto
-$validador = new Tavo\ValidadorEc;
+$validador = new Alban\ValidadorEc;
 
 // validar CI
 if ($validador->validarCedula('0926687856')) {
@@ -96,11 +102,3 @@ lo analizaremos y agregaremos a nuestro repositorio lo mas pronto posible, siemp
 
 - Todos los Test deben estar en verde, es decir pasar exitosamente
 - Si escribes una nueva funcionalidad este debe tener su propio test, para probar la misma
-
-Contactos
-------------
-Edwin Ramírez 
-- Twitter: [@edwin_tavo](https://twitter.com/edwin_tavo)
-
-Bryan Suárez 
-- Twitter: [@BryanSC_7](https://twitter.com/BryanSC_7)
