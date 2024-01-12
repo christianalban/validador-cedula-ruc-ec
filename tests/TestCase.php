@@ -1,9 +1,9 @@
 <?php
 
-namespace Tavo\Tests;
+namespace Alban\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
-use Tavo\ValidadorEc;
+use Alban\ValidadorEc;
 
 class TestCase extends BaseTestCase
 {
