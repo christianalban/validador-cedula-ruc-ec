@@ -1,9 +1,15 @@
 {
-    "name": "tavo1987/ec-validador-cedula-ruc",
+    "name": "alban/validador-cedula-ruc-ec",
     "description": "Validador de RUC y cédula en Ecuador",
-    "homepage": "https://github.com/tavo1987/ec-validador-cedula-ruc",
+    "homepage": "https://github.com/christianalban/validador-cedula-ruc-ec",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Christian Albán",
+            "email": "chris_alban@live.com",
+            "homepage": "https://www.linkedin.com/in/christian-alban-ortiz/",
+            "role": "Developer"
+        },
         {
             "name": "Edwin Ramírez",
             "email": "tavo198718@gmail.com",
@@ -23,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Tavo\\": "src/"
+            "Alban\\": "src/"
         }
     },
      "autoload-dev": {
         "psr-4": {
-            "Tavo\\Tests\\": "tests/"
+            "Alban\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable"
